@@ -1,0 +1,40 @@
+% Several CM failures stacked as panels (a)-(e) under a shared legend and column titles, each at its
+% natural size (same fonts), with the panel letter to its top left and a rule between them; the
+% panels, legend and titles are drawn by stack_panels.py. Build with
+%   pdflatex fig_mechanisms_stack.tex
+\documentclass[border=3pt]{standalone}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{graphicx}
+\usepackage{xcolor}
+
+\newlength{\letterw}\setlength{\letterw}{1.15cm}     % the column of panel letters
+\newlength{\panelw}                                   % the panels (all of one width) and the header
+\settowidth{\panelw}{\includegraphics{stack_header.pdf}}
+\newlength{\figw}                                     % letters and panels, or the legend if wider
+\settowidth{\figw}{\includegraphics{stack_legend.pdf}}
+\ifdim\figw<\dimexpr\letterw+\panelw\relax\setlength{\figw}{\dimexpr\letterw+\panelw\relax}\fi
+
+% rows of panel letter and panel, centred under the legend
+\newcommand{\panel}[2]{%
+  \makebox[\letterw][l]{\raisebox{-1.1em}{\huge\textbf{(#1)}}}%
+  \raisebox{-\height}{\includegraphics{#2}}\par}
+\newcommand{\separator}{\vspace{3pt}{\color{black!45}\rule{\linewidth}{0.5pt}}\par\vspace{4pt}}
+
+\begin{document}
+\begin{minipage}{\figw}
+\centering
+\includegraphics{stack_legend.pdf}\par\vspace{20pt}
+\hspace*{\letterw}\includegraphics{stack_header.pdf}\par
+\separator
+\panel{a}{stack_fig_d3_reuse_195_view_above.pdf}
+\separator
+\panel{b}{stack_fig_d5_abandoned.pdf}
+\separator
+\panel{c}{stack_fig_d5_phantom_257_364.pdf}
+\separator
+\panel{d}{stack_fig_d5_reuse_17_227.pdf}
+\separator
+\panel{e}{stack_fig_d5_reuse.pdf}
+\end{minipage}
+\end{document}

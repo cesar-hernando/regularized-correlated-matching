@@ -1,0 +1,59 @@
+[build-system]
+# >=77 for PEP 639 SPDX `license` support.
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "RegularizedCM"
+description = "Code and data for the paper: Correlated decoding loses the surface code's effective distance below threshold"
+readme = "README.md"
+license = "Apache-2.0"
+requires-python = ">=3.11"
+keywords = ["QEC", "Surface Code", "Decoding"]
+dynamic = ["version"]
+
+authors = [
+    { name = "César Hernando-Fuente", email = "cesar.hernando22@gmail.com" },
+    { name = "Joonas Majaniemi" },
+    { name = "Evert van Nieuwenburg" },
+    { name = "Felix Frohnert" },
+]
+
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Programming Language :: Python :: 3.11",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Quantum Computing",
+]
+
+dependencies = [
+    # numpy and matplotlib: the analysis and plotting scripts.
+    "numpy",
+    "matplotlib",
+    # scipy: the fits of the analysis and figure scripts.
+    "scipy",
+    "stim",
+    # Custom fork: adds a regularized reweight strength `alpha` on top of
+    # PyMatching's own correlated matching (enable_correlations=True).
+    # The `+rcm.1` local version cannot be served by PyPI, so this pin fails
+    # loudly if the fork is missing instead of silently installing upstream.
+    # `[tool.uv.sources]` below tells uv where to build it from; plain pip
+    # users must install it themselves first (see README).
+    "pymatching==2.3.1+rcm.1",
+    "sinter>=1.16.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/cesar-hernando/regularized-correlated-matching"
+
+# Resolve the pinned fork from git. uv applies this when working on this
+# repository; it is ignored if the package is consumed as a dependency
+# elsewhere, where the `==2.3.1+rcm.1` pin still guards against upstream.
+[tool.uv.sources]
+pymatching = { git = "https://github.com/cesar-hernando/PyMatching.git", tag = "v2.3.1+rcm.1" }
+
+[tool.setuptools.dynamic]
+version = { file = "VERSION" }
+
+[tool.setuptools.packages.find]
+where = ["src"]

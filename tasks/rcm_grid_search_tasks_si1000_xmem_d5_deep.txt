@@ -1,0 +1,7 @@
+# SI1000 grid search, X memory, d = 5: the three points whose weakest-alpha error count
+# fell below 1,000, with deeper shot targets. The runner resumes from the shots already
+# in data/mwpm/rcm_grid_search_si1000_xmem_d5. Highest p first.
+# code basis distance rounds p shots noise_model decomposition circuit
+rotated_surface_code x 5 5 1.995262e-04 300000000 si1000 rotated-surface-code-coords circuits/si1000_circuits/QMEM_rotated_patch-True_d_X-5_d_Z-5_rounds-5_basis-X_SI1000_p-0.000200.stim
+rotated_surface_code x 5 5 6.309573e-05 15000000000 si1000 rotated-surface-code-coords circuits/si1000_circuits/QMEM_rotated_patch-True_d_X-5_d_Z-5_rounds-5_basis-X_SI1000_p-0.000063.stim
+rotated_surface_code x 5 5 5.011872e-05 30000000000 si1000 rotated-surface-code-coords circuits/si1000_circuits/QMEM_rotated_patch-True_d_X-5_d_Z-5_rounds-5_basis-X_SI1000_p-0.000050.stim

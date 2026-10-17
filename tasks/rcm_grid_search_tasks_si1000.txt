@@ -1,0 +1,66 @@
+# RCM grid search of the SI1000 Z-memory circuits, at the (distance, p) points of Riverlane's
+# LCD scan. `shots` is the largest shot count the LCD scan used at each point
+# (data/lcd/ratio_vs_p_curves.csv, condition alpha_1).
+#
+# Line N (not counting comments) is task index N - 1 (`--indices`):
+#   index  0-25: d=3    index 26-44: d=5    index 45-57: d=7
+#
+# code basis distance rounds p shots noise_model decomposition circuit
+rotated_surface_code z 3 3 3.162278e-03 81442 si1000 rotated-surface-code-coords circuits/si1000_circuits/QMEM_rotated_patch-True_d_X-3_d_Z-3_rounds-3_basis-Z_SI1000_p-0.003162.stim
+rotated_surface_code z 3 3 2.511886e-03 125474 si1000 rotated-surface-code-coords circuits/si1000_circuits/QMEM_rotated_patch-True_d_X-3_d_Z-3_rounds-3_basis-Z_SI1000_p-0.002512.stim
+rotated_surface_code z 3 3 1.995262e-03 187938 si1000 rotated-surface-code-coords circuits/si1000_circuits/QMEM_rotated_patch-True_d_X-3_d_Z-3_rounds-3_basis-Z_SI1000_p-0.001995.stim
+rotated_surface_code z 3 3 1.584893e-03 306722 si1000 rotated-surface-code-coords circuits/si1000_circuits/QMEM_rotated_patch-True_d_X-3_d_Z-3_rounds-3_basis-Z_SI1000_p-0.001585.stim
+rotated_surface_code z 3 3 1.258925e-03 442914 si1000 rotated-surface-code-coords circuits/si1000_circuits/QMEM_rotated_patch-True_d_X-3_d_Z-3_rounds-3_basis-Z_SI1000_p-0.001259.stim
+rotated_surface_code z 3 3 1.000000e-03 701986 si1000 rotated-surface-code-coords circuits/si1000_circuits/QMEM_rotated_patch-True_d_X-3_d_Z-3_rounds-3_basis-Z_SI1000_p-0.001000.stim
+rotated_surface_code z 3 3 7.943282e-04 1115682 si1000 rotated-surface-code-coords circuits/si1000_circuits/QMEM_rotated_patch-True_d_X-3_d_Z-3_rounds-3_basis-Z_SI1000_p-0.000794.stim
+rotated_surface_code z 3 3 6.309573e-04 1691170 si1000 rotated-surface-code-coords circuits/si1000_circuits/QMEM_rotated_patch-True_d_X-3_d_Z-3_rounds-3_basis-Z_SI1000_p-0.000631.stim
+rotated_surface_code z 3 3 5.011872e-04 2825762 si1000 rotated-surface-code-coords circuits/si1000_circuits/QMEM_rotated_patch-True_d_X-3_d_Z-3_rounds-3_basis-Z_SI1000_p-0.000501.stim
+rotated_surface_code z 3 3 3.981072e-04 4096546 si1000 rotated-surface-code-coords circuits/si1000_circuits/QMEM_rotated_patch-True_d_X-3_d_Z-3_rounds-3_basis-Z_SI1000_p-0.000398.stim
+rotated_surface_code z 3 3 3.162278e-04 6727202 si1000 rotated-surface-code-coords circuits/si1000_circuits/QMEM_rotated_patch-True_d_X-3_d_Z-3_rounds-3_basis-Z_SI1000_p-0.000316.stim
+rotated_surface_code z 3 3 2.511886e-04 10757666 si1000 rotated-surface-code-coords circuits/si1000_circuits/QMEM_rotated_patch-True_d_X-3_d_Z-3_rounds-3_basis-Z_SI1000_p-0.000251.stim
+rotated_surface_code z 3 3 1.995262e-04 16849442 si1000 rotated-surface-code-coords circuits/si1000_circuits/QMEM_rotated_patch-True_d_X-3_d_Z-3_rounds-3_basis-Z_SI1000_p-0.000200.stim
+rotated_surface_code z 3 3 1.584893e-04 27098658 si1000 rotated-surface-code-coords circuits/si1000_circuits/QMEM_rotated_patch-True_d_X-3_d_Z-3_rounds-3_basis-Z_SI1000_p-0.000158.stim
+rotated_surface_code z 3 3 1.258925e-04 42838562 si1000 rotated-surface-code-coords circuits/si1000_circuits/QMEM_rotated_patch-True_d_X-3_d_Z-3_rounds-3_basis-Z_SI1000_p-0.000126.stim
+rotated_surface_code z 3 3 1.000000e-04 68358690 si1000 rotated-surface-code-coords circuits/si1000_circuits/QMEM_rotated_patch-True_d_X-3_d_Z-3_rounds-3_basis-Z_SI1000_p-0.000100.stim
+rotated_surface_code z 3 3 7.943282e-05 93213608 si1000 rotated-surface-code-coords circuits/si1000_circuits/QMEM_rotated_patch-True_d_X-3_d_Z-3_rounds-3_basis-Z_SI1000_p-0.000079.stim
+rotated_surface_code z 3 3 6.309573e-05 159681058 si1000 rotated-surface-code-coords circuits/si1000_circuits/QMEM_rotated_patch-True_d_X-3_d_Z-3_rounds-3_basis-Z_SI1000_p-0.000063.stim
+rotated_surface_code z 3 3 5.011872e-05 266914611 si1000 rotated-surface-code-coords circuits/si1000_circuits/QMEM_rotated_patch-True_d_X-3_d_Z-3_rounds-3_basis-Z_SI1000_p-0.000050.stim
+rotated_surface_code z 3 3 3.981072e-05 415917875 si1000 rotated-surface-code-coords circuits/si1000_circuits/QMEM_rotated_patch-True_d_X-3_d_Z-3_rounds-3_basis-Z_SI1000_p-0.000040.stim
+rotated_surface_code z 3 3 3.162278e-05 587623970 si1000 rotated-surface-code-coords circuits/si1000_circuits/QMEM_rotated_patch-True_d_X-3_d_Z-3_rounds-3_basis-Z_SI1000_p-0.000032.stim
+rotated_surface_code z 3 3 2.511886e-05 924282675 si1000 rotated-surface-code-coords circuits/si1000_circuits/QMEM_rotated_patch-True_d_X-3_d_Z-3_rounds-3_basis-Z_SI1000_p-0.000025.stim
+rotated_surface_code z 3 3 1.995262e-05 1368943957 si1000 rotated-surface-code-coords circuits/si1000_circuits/QMEM_rotated_patch-True_d_X-3_d_Z-3_rounds-3_basis-Z_SI1000_p-0.000020.stim
+rotated_surface_code z 3 3 1.584893e-05 2131306086 si1000 rotated-surface-code-coords circuits/si1000_circuits/QMEM_rotated_patch-True_d_X-3_d_Z-3_rounds-3_basis-Z_SI1000_p-0.000016.stim
+rotated_surface_code z 3 3 1.258925e-05 3189603191 si1000 rotated-surface-code-coords circuits/si1000_circuits/QMEM_rotated_patch-True_d_X-3_d_Z-3_rounds-3_basis-Z_SI1000_p-0.000013.stim
+rotated_surface_code z 3 3 1.000000e-05 5003731899 si1000 rotated-surface-code-coords circuits/si1000_circuits/QMEM_rotated_patch-True_d_X-3_d_Z-3_rounds-3_basis-Z_SI1000_p-0.000010.stim
+rotated_surface_code z 5 5 3.162278e-03 80418 si1000 rotated-surface-code-coords circuits/si1000_circuits/QMEM_rotated_patch-True_d_X-5_d_Z-5_rounds-5_basis-Z_SI1000_p-0.003162.stim
+rotated_surface_code z 5 5 2.511886e-03 149026 si1000 rotated-surface-code-coords circuits/si1000_circuits/QMEM_rotated_patch-True_d_X-5_d_Z-5_rounds-5_basis-Z_SI1000_p-0.002512.stim
+rotated_surface_code z 5 5 1.995262e-03 292386 si1000 rotated-surface-code-coords circuits/si1000_circuits/QMEM_rotated_patch-True_d_X-5_d_Z-5_rounds-5_basis-Z_SI1000_p-0.001995.stim
+rotated_surface_code z 5 5 1.584893e-03 542242 si1000 rotated-surface-code-coords circuits/si1000_circuits/QMEM_rotated_patch-True_d_X-5_d_Z-5_rounds-5_basis-Z_SI1000_p-0.001585.stim
+rotated_surface_code z 5 5 1.258925e-03 1042978 si1000 rotated-surface-code-coords circuits/si1000_circuits/QMEM_rotated_patch-True_d_X-5_d_Z-5_rounds-5_basis-Z_SI1000_p-0.001259.stim
+rotated_surface_code z 5 5 1.000000e-03 2157090 si1000 rotated-surface-code-coords circuits/si1000_circuits/QMEM_rotated_patch-True_d_X-5_d_Z-5_rounds-5_basis-Z_SI1000_p-0.001000.stim
+rotated_surface_code z 5 5 7.943282e-04 4178466 si1000 rotated-surface-code-coords circuits/si1000_circuits/QMEM_rotated_patch-True_d_X-5_d_Z-5_rounds-5_basis-Z_SI1000_p-0.000794.stim
+rotated_surface_code z 5 5 6.309573e-04 8194594 si1000 rotated-surface-code-coords circuits/si1000_circuits/QMEM_rotated_patch-True_d_X-5_d_Z-5_rounds-5_basis-Z_SI1000_p-0.000631.stim
+rotated_surface_code z 5 5 5.011872e-04 16174664 si1000 rotated-surface-code-coords circuits/si1000_circuits/QMEM_rotated_patch-True_d_X-5_d_Z-5_rounds-5_basis-Z_SI1000_p-0.000501.stim
+rotated_surface_code z 5 5 3.981072e-04 24993041 si1000 rotated-surface-code-coords circuits/si1000_circuits/QMEM_rotated_patch-True_d_X-5_d_Z-5_rounds-5_basis-Z_SI1000_p-0.000398.stim
+rotated_surface_code z 5 5 3.162278e-04 49046801 si1000 rotated-surface-code-coords circuits/si1000_circuits/QMEM_rotated_patch-True_d_X-5_d_Z-5_rounds-5_basis-Z_SI1000_p-0.000316.stim
+rotated_surface_code z 5 5 2.511886e-04 98483473 si1000 rotated-surface-code-coords circuits/si1000_circuits/QMEM_rotated_patch-True_d_X-5_d_Z-5_rounds-5_basis-Z_SI1000_p-0.000251.stim
+rotated_surface_code z 5 5 1.995262e-04 195923490 si1000 rotated-surface-code-coords circuits/si1000_circuits/QMEM_rotated_patch-True_d_X-5_d_Z-5_rounds-5_basis-Z_SI1000_p-0.000200.stim
+rotated_surface_code z 5 5 1.584893e-04 380025446 si1000 rotated-surface-code-coords circuits/si1000_circuits/QMEM_rotated_patch-True_d_X-5_d_Z-5_rounds-5_basis-Z_SI1000_p-0.000158.stim
+rotated_surface_code z 5 5 1.258925e-04 774389691 si1000 rotated-surface-code-coords circuits/si1000_circuits/QMEM_rotated_patch-True_d_X-5_d_Z-5_rounds-5_basis-Z_SI1000_p-0.000126.stim
+rotated_surface_code z 5 5 1.000000e-04 1582743619 si1000 rotated-surface-code-coords circuits/si1000_circuits/QMEM_rotated_patch-True_d_X-5_d_Z-5_rounds-5_basis-Z_SI1000_p-0.000100.stim
+rotated_surface_code z 5 5 7.943282e-05 2864447008 si1000 rotated-surface-code-coords circuits/si1000_circuits/QMEM_rotated_patch-True_d_X-5_d_Z-5_rounds-5_basis-Z_SI1000_p-0.000079.stim
+rotated_surface_code z 5 5 6.309573e-05 2896458137 si1000 rotated-surface-code-coords circuits/si1000_circuits/QMEM_rotated_patch-True_d_X-5_d_Z-5_rounds-5_basis-Z_SI1000_p-0.000063.stim
+rotated_surface_code z 5 5 5.011872e-05 2896458137 si1000 rotated-surface-code-coords circuits/si1000_circuits/QMEM_rotated_patch-True_d_X-5_d_Z-5_rounds-5_basis-Z_SI1000_p-0.000050.stim
+rotated_surface_code z 7 7 3.162278e-03 87033 si1000 rotated-surface-code-coords circuits/si1000_circuits/QMEM_rotated_patch-True_d_X-7_d_Z-7_rounds-7_basis-Z_SI1000_p-0.003162.stim
+rotated_surface_code z 7 7 2.511886e-03 206378 si1000 rotated-surface-code-coords circuits/si1000_circuits/QMEM_rotated_patch-True_d_X-7_d_Z-7_rounds-7_basis-Z_SI1000_p-0.002512.stim
+rotated_surface_code z 7 7 1.995262e-03 492834 si1000 rotated-surface-code-coords circuits/si1000_circuits/QMEM_rotated_patch-True_d_X-7_d_Z-7_rounds-7_basis-Z_SI1000_p-0.001995.stim
+rotated_surface_code z 7 7 1.584893e-03 1246377 si1000 rotated-surface-code-coords circuits/si1000_circuits/QMEM_rotated_patch-True_d_X-7_d_Z-7_rounds-7_basis-Z_SI1000_p-0.001585.stim
+rotated_surface_code z 7 7 1.258925e-03 3094617 si1000 rotated-surface-code-coords circuits/si1000_circuits/QMEM_rotated_patch-True_d_X-7_d_Z-7_rounds-7_basis-Z_SI1000_p-0.001259.stim
+rotated_surface_code z 7 7 1.000000e-03 6883393 si1000 rotated-surface-code-coords circuits/si1000_circuits/QMEM_rotated_patch-True_d_X-7_d_Z-7_rounds-7_basis-Z_SI1000_p-0.001000.stim
+rotated_surface_code z 7 7 7.943282e-04 16064577 si1000 rotated-surface-code-coords circuits/si1000_circuits/QMEM_rotated_patch-True_d_X-7_d_Z-7_rounds-7_basis-Z_SI1000_p-0.000794.stim
+rotated_surface_code z 7 7 6.309573e-04 39604562 si1000 rotated-surface-code-coords circuits/si1000_circuits/QMEM_rotated_patch-True_d_X-7_d_Z-7_rounds-7_basis-Z_SI1000_p-0.000631.stim
+rotated_surface_code z 7 7 5.011872e-04 102678084 si1000 rotated-surface-code-coords circuits/si1000_circuits/QMEM_rotated_patch-True_d_X-7_d_Z-7_rounds-7_basis-Z_SI1000_p-0.000501.stim
+rotated_surface_code z 7 7 3.981072e-04 252051489 si1000 rotated-surface-code-coords circuits/si1000_circuits/QMEM_rotated_patch-True_d_X-7_d_Z-7_rounds-7_basis-Z_SI1000_p-0.000398.stim
+rotated_surface_code z 7 7 3.162278e-04 644394493 si1000 rotated-surface-code-coords circuits/si1000_circuits/QMEM_rotated_patch-True_d_X-7_d_Z-7_rounds-7_basis-Z_SI1000_p-0.000316.stim
+rotated_surface_code z 7 7 2.511886e-04 800459917 si1000 rotated-surface-code-coords circuits/si1000_circuits/QMEM_rotated_patch-True_d_X-7_d_Z-7_rounds-7_basis-Z_SI1000_p-0.000251.stim
+rotated_surface_code z 7 7 1.995262e-04 800459917 si1000 rotated-surface-code-coords circuits/si1000_circuits/QMEM_rotated_patch-True_d_X-7_d_Z-7_rounds-7_basis-Z_SI1000_p-0.000200.stim

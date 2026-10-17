@@ -1,0 +1,31 @@
+RegularizedCorrelatedMatching
+Copyright 2026 Cesar Hernando, Joonas Majaniemi,
+               Evert van Nieuwenburg, Felix Frohnert
+
+Licensed under the Apache License, Version 2.0. See the LICENSE file.
+
+--------------------------------------------------------------------------
+Third-party software included in this distribution
+--------------------------------------------------------------------------
+
+src/RegularizedCM/decompose_errors.py
+
+  Copyright 2025 Google LLC
+  Licensed under the Apache License, Version 2.0.
+
+  Adapted from the Tesseract Decoder project:
+    Repository: https://github.com/quantumlib/tesseract-decoder
+    Path:       src/py/_tesseract_py_util/decompose_errors.py
+    Commit:     155f9e1803e9a86b6c7f51c3e71bb9de0125af96 (2026-08-10)
+
+  Modifications (2026, RegularizedCorrelatedMatching): added a decomposition for
+  Stim's unrotated surface-code circuits
+  (`detector_coord_to_basis_for_stim_unrotated_surface_code_convention`,
+  `decompose_errors_for_stim_unrotated_surface_code_coords`, and the
+  "stim-unrotated-surfacecode-coords" method). All other code is unchanged.
+
+  If you use this software, please also cite the Tesseract Decoder:
+
+    L. Aghababaie Beni, O. Higgott, and N. Shutty,
+    "Tesseract: A Search-Based Decoder for Quantum Error Correction",
+    2025. arXiv:2503.10988. doi:10.48550/arXiv.2503.10988

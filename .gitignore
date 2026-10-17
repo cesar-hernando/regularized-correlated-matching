@@ -1,0 +1,42 @@
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Temporary result files
+*.csv.tmp
+
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Packaging / build artifacts
+*.egg-info/
+*.egg
+build/
+dist/
+.eggs/
+
+# Editors and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Windows download metadata
+*Zone.Identifier
+
+# LaTeX by-products
+*.aux
+*.log
+
+# Intermediate and variant figures written by the scripts
+effective_distance_loss/failure_gallery/stack_*.pdf
+effective_distance_loss/failure_gallery/fig_d*.pdf
+!effective_distance_loss/failure_gallery/fig_d3_reuse_view_above_noalpha_nolegend_nozl.pdf
+effective_distance_loss/posterior_and_failing_probability_merged_v2.pdf
+figures/cm_clcd_ratio_fits.pdf

@@ -1,0 +1,13 @@
+# SI1000 grid search top-up: the five points of rcm_grid_search_tasks_si1000.txt whose shot counts left the
+# two-pass decoders with far fewer logical errors than their neighbours (d = 5 at p = 5e-5 to 7.9e-5, d = 7 at
+# p = 2e-4 and 2.5e-4). `shots` is the new total, set so that every decoder (MWPM, CM at alpha = 1, RCM at alpha*)
+# reaches at least 1000 errors, plus 15%: RCM, which fails least, sets it. Running these lines resumes each
+# point from its result file in data/mwpm/rcm_grid_search_si1000, so only the missing shots are sampled.
+# Same circuits, alpha grid and decomposition as the original list. Ordered cheapest first.
+#
+# code basis distance rounds p shots noise_model decomposition circuit
+rotated_surface_code z 5 5 7.943282e-05 3600000000 si1000 rotated-surface-code-coords circuits/si1000_circuits/QMEM_rotated_patch-True_d_X-5_d_Z-5_rounds-5_basis-Z_SI1000_p-0.000079.stim
+rotated_surface_code z 5 5 6.309573e-05 6800000000 si1000 rotated-surface-code-coords circuits/si1000_circuits/QMEM_rotated_patch-True_d_X-5_d_Z-5_rounds-5_basis-Z_SI1000_p-0.000063.stim
+rotated_surface_code z 5 5 5.011872e-05 16500000000 si1000 rotated-surface-code-coords circuits/si1000_circuits/QMEM_rotated_patch-True_d_X-5_d_Z-5_rounds-5_basis-Z_SI1000_p-0.000050.stim
+rotated_surface_code z 7 7 2.511886e-04 3300000000 si1000 rotated-surface-code-coords circuits/si1000_circuits/QMEM_rotated_patch-True_d_X-7_d_Z-7_rounds-7_basis-Z_SI1000_p-0.000251.stim
+rotated_surface_code z 7 7 1.995262e-04 7100000000 si1000 rotated-surface-code-coords circuits/si1000_circuits/QMEM_rotated_patch-True_d_X-7_d_Z-7_rounds-7_basis-Z_SI1000_p-0.000200.stim

@@ -1,0 +1,4 @@
+code,noise_model,decomposition,circuit,basis,distance,rounds,p,decoder,alpha,shots,errors,ler,ler_std,only_this_fails,only_mwpm_fails,decode_seconds,us_per_shot,runs
+rotated_surface_code,circuit-level-depolarizing,rotated-surface-code-coords,stim-generated,z,9,9,0.01,mwpm,,12391,1570,0.12670486643531595,0.0029882985855701288,0,0,0.732,59.0398,1
+rotated_surface_code,circuit-level-depolarizing,rotated-surface-code-coords,stim-generated,z,9,9,0.01,cm,0.9,12391,1122,0.09054959244613026,0.002577980229543069,376,824,1.752,141.4099,1
+rotated_surface_code,circuit-level-depolarizing,rotated-surface-code-coords,stim-generated,z,9,9,0.01,cm,1.0,12391,1113,0.08982325881688322,0.002568645030474861,393,850,1.706,137.7195,1
