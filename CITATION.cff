@@ -16,3 +16,24 @@ authors:
     orcid: "https://orcid.org/0000-0003-3717-6352"
 repository-code: "https://github.com/cesar-hernando/regularized-correlated-matching"
 license: Apache-2.0
+preferred-citation:
+  type: article
+  title: "Correlated decoding loses the surface code's effective distance below threshold"
+  authors:
+    - family-names: Hernando-Fuente
+      given-names: César
+      orcid: "https://orcid.org/0009-0007-9438-9908"
+    - family-names: Majaniemi
+      given-names: Joonas
+      orcid: "https://orcid.org/0000-0003-3389-8294"
+    - family-names: van Nieuwenburg
+      given-names: Evert
+      orcid: "https://orcid.org/0000-0003-0323-0031"
+    - family-names: Frohnert
+      given-names: Felix
+      orcid: "https://orcid.org/0000-0003-3717-6352"
+  journal: "arXiv preprint arXiv:2610.26785"
+  year: 2026
+  month: 10
+  doi: "10.48550/arXiv.2610.26785"
+  url: "https://arxiv.org/abs/2610.26785"
